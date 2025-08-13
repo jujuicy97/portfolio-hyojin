@@ -1,0 +1,54 @@
+.about-me {
+  background-color: var(--color-sub);
+  color: var(--color-primary);
+  @include flex-layout();
+  .about-txt-wrap{
+    width: 70%;
+    height: 100vh;
+    @include flex-layout(column);
+    h1 {
+      font-family: "Kaushan Script", cursive;
+      font-size: 20rem;
+      width: 100%;
+      text-align: right;
+      filter: blur(4px);
+      // color: #212c0c;
+      color: var(--color-primary);
+      
+      
+    }
+    .about-txt {
+      font-size: 4.5rem;
+      font-weight: 300;
+      margin: 4rem;
+      .point {
+        font-size: 5rem;
+        font-weight: 700;
+      }
+    }
+    .about-btn {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .row {
+        display: flex;
+        gap: 2rem;
+        .borderBtn {
+          @include border-btn(250px, 70px);
+          font-size: 2.5rem;
+          color: var(--color-primary);
+          border: 3px solid var(--color-primary);
+        }
+        .colorBtn {
+          @include color-btn(250px, 70px);
+          font-size: 2.5rem;
+          background-color: var(--color-primary);
+          color: #eeeeee;      
+        }
+      }
+      .row:nth-child(2) {
+        justify-content: center;
+      }
+    }
+  }
+  }

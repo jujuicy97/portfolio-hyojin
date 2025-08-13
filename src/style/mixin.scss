@@ -1,0 +1,38 @@
+@mixin desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+//플렉스
+@mixin flex-layout($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//컬러버튼
+@mixin color-btn($width: 300px, $height: 75px){
+  background: var(--color-sub);
+  border: none;
+  width: $width;
+  height: $height;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5rem;
+}
+//보더버튼
+@mixin border-btn($width: 300px, $height: 75px){
+  background: none;
+  border: 3px solid var(--color-sub);
+  color: #eeeeee;
+  width: $width;
+  height: $height;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5rem;
+}

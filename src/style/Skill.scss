@@ -1,0 +1,17 @@
+.skills-wrap{
+  height: 105vh;
+  background-image: url(../../public/image//Skills/skills-back.png);
+  @include flex-layout();
+  img{
+    display: block;
+    
+  }
+  .skills{
+    @include flex-layout();
+    // width: 70%;
+  .skills-top{
+  
+}
+  }
+}
+

@@ -1,0 +1,15 @@
+.clone-project{
+  // height: 100vh;
+  @include flex-layout();
+  .line{
+    // height: 100%;
+  }
+  .circle-num{
+    > div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    }
+  }
+}
