@@ -1,3 +1,5 @@
+import Clone from '../json/Clone.json'; 
+
 const CloneProject = () => {
   return (
     <>
@@ -10,8 +12,44 @@ const CloneProject = () => {
         <div>3</div>
       </div>
       <div className="cloneCard-wrap">
+        {Clone.map((card)=>{
+          return (
+          <div key={card.id} className={card.className}>
+            <img src={card.image} alt={card.title}/>
+            <div className="txt-wrap">
+              <div className="txt-top">
+                <h1>{card.title}</h1>
+                
+                {card.description.map((desc, i)=>{
+                  return <p key={i}>{desc}</p> 
+                  })}
+              </div>
+              <div className='txt-bottom'>
+                {card.bottom.map((botItem, i)=>{
+                  return(
+                    <div className='bot' key={i}>
+                      { botItem.title && <h4>{botItem.title}</h4>}
+                      { botItem.title && <p>{botItem.content}</p>}
+                    </div>
+                  )
+                })}
+              </div>
+              <div className="txt-point">
+                    {card.points.map((point, i) =>
+                      point.link ? (
+                        <a key={i} href={point.link}>{point.text}</a>
+                      ) : (
+                        <p key={i}>{point.text}</p>
+                      )
+                    )}
+                  </div>
+            </div>
+          </div>
+          )
+        })}
 
-      <div className="net">
+
+      {/* <div className="net">
         <img src="./image/Clone/net-img.jpg"/>
         <div className="txt-wrap">
           <div className="txt-top">
@@ -35,9 +73,9 @@ const CloneProject = () => {
             <a> https://jujuicy97.github.io/netflix/</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="mom">
+      {/* <div className="mom">
         <img src="./image/Clone/mom-img.jpg"/>
         <div className="txt-wrap">
           <div className="txt-top">
@@ -61,9 +99,9 @@ const CloneProject = () => {
             <a> https://jujuicy97.github.io/netflix/</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="air">
+      {/* <div className="air">
         <img src="./image/Clone/air-img.jpg"/>
         <div className="txt-wrap">
           <div className="txt-top">
@@ -95,7 +133,7 @@ const CloneProject = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     </div>
     </div>
     </>

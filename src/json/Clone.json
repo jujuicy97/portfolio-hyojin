@@ -1,0 +1,61 @@
+[
+    {
+      "id": 1,
+      "className": "net",
+      "image": "./image/Clone/net-img.jpg",
+      "title": "넷플릭스 클론 사이트",
+      "description": [
+        "국내 대표 OTT스트리밍 사이트의 UI를 클론하여 사용자가 최신 인기 영화를 확인하며, 클릭 시 상세 정보를 확인하는 웹사이트를 구현하였습니다.",
+        "오픈API 활용법을 익혀 실제 데이터와 연동하는 경험을 쌓았으며, React기반 라이브러리로 UI를 구현해 개발 역량을 키웠습니다."
+      ],
+      "bottom": [
+        { "title": "제작에 사용된 스킬", "content": "React, React-Router, SCSS" },
+        { "title": "UI 디자인 방식", "content": "Figma를 활용한 디자인 시스템 구축 후 코드 구현" },
+        { "title": "레이아웃 제작 방식", "content": "Flex와 Grid를 활용하여 콘텐츠를 정렬한 스크롤 반응형 레이아웃 제작" },
+        { "title": "플러그인", "content": "React, React-router, React-icons, React-slick, TMDB API, SCSS" }
+      ],
+      "points": [
+        { "text": "100%(개인프로젝트)" },
+        { "text": "오픈API와 라이브러리 활용", "link": "https://jujuicy97.github.io/netflix/" }
+      ]
+    },
+    {
+      "id": 2,
+      "className": "mom",
+      "image": "./image/Clone/mom-img.jpg",
+      "title": "모멘텀 클론 사이트",
+      "description": [
+        "Momentum 어플을 클론하여 사용자가 로그인 하고 매일의 명언, 날씨 정보를 확인하고, 간편하게 할일 목록을 작성할 수 있는 웹/앱을 구현하였습니다.",
+        "React 상태 관리와 이벤트 처리, 조건부 렌더링, 로컬스토리지 활용을 연습하기 위해 제작하였습니다."
+      ],
+      "bottom": [
+        { "title": "제작에 사용된 스킬", "content": "React, React-Router, SCSS" },
+        { "title": "UI 디자인 방식", "content": "Figma를 활용한 디자인 시스템 구축 후 코드 구현" },
+        { "title": "레이아웃 제작 방식", "content": "Flex 기반의 레이아웃 제작" }
+      ],
+      "points": [
+        { "text": "100%(개인프로젝트)" },
+        { "text": "오픈API와 라이브러리 활용", "link": "https://jujuicy97.github.io/netflix/" }
+      ]
+    },
+    {
+      "id": 3,
+      "className": "air",
+      "image": "./image/Clone/air-img.jpg",
+      "title": "에어비앤비 클론 사이트",
+      "description": [
+        "전 세계 숙소 예약 플랫폼인 Airbnb의 메인 페이지를 제작하여 사용자가 원하는 숙소 메뉴를 고르고, 숙소 이미지와 설명을 확인할 수 있는 웹사이트를 구현하였습니다.",
+        "Flex와 Grid를 활용하여 반응형 레이아웃을 구성하고, 실제 서비스와 유사한 디자인 요소를 구현하는 능력을 향상시켰습니다."
+      ],
+      "bottom": [
+        { "title": "제작에 사용된 스킬", "content": "HTML5, CSS3" },
+        { "title": "UI 디자인 방식", "content": "Figma를 활용한 디자인 시스템 구축 후 코드 구현" },
+        { "title": "레이아웃 제작 방식", "content": "Flex와 Grid를 활용한 반응형 레이아웃 구현" },
+        { "title": "플러그인", "content": "React, React-router, React-icons, React-slick, TMDB API, SCSS" }
+      ],
+      "points": [
+        { "text": "100%(개인프로젝트)" },
+        { "text": "오픈API와 라이브러리 활용", "link": "https://jujuicy97.github.io/netflix/" }
+      ]
+    }
+  ]

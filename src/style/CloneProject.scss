@@ -68,6 +68,11 @@ h2{
     .net, .mom, .air{
       gap: 10rem;
     }
+    .mom{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: end;
+    }
     .txt-wrap{
       width: 530px;
       height: 500px;
@@ -82,18 +87,35 @@ h2{
         flex-direction: column;
         .bot{
           display: flex;
+          // align-items: center;
+          gap: 1rem;
+          margin: 0.5rem 0;
           h4{
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 160px;
             background-color: #2D3142;
-            width: 190px;
             padding: 0 1rem;
             text-align: center;
             font-weight: 100;
+            padding: 0.5rem;
+            
           }
         }  
       }
       .txt-point{
-
+        display: flex;
+        gap: 1rem;
+        a, p{            
+          display: flex;
+          background-color: #2D3142;
+          padding: 0 1rem;
+          text-align: center;
+          font-weight: 100;
+          border: 1px solid var(--color-sub);
+          padding: 0.5rem;
+        }
       }
     }
   }
