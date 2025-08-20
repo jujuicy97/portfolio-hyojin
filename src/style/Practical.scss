@@ -1,0 +1,40 @@
+.practical {
+  // height: 100vh;
+  .practical-title{
+    font-size: 9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    margin: 0 10rem;
+    margin-top: 20rem;
+    margin-bottom: 8rem;
+    // text-align: left;
+    // margin-top: 6rem;
+    gap: 3rem;
+    display: flex;
+    .text1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+    .text2 {
+      font-family: 'Anonymous Pro', monospace;
+      font-weight: 400;
+      font-size: 11rem;
+      // color: var(--color-sub);
+    }
+  }
+  .practical-txt{
+    display: none;
+  }
+  .card-wrap{
+    @include flex-layout();
+    gap: 5rem;
+    .card{
+      padding: 5rem 7rem;
+      .card-top{
+        @include flex-layout(row,flex-start);
+        gap: 3rem;
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Skill from "./components/Skill";
 import MainProject from "./components/MainProject";
 import CloneProject from "./components/CloneProject";
+import Practical from "./components/Practical";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,30 +17,31 @@ const App = () => {
   const page3Ref = useRef(null);
 
   useEffect(()=>{
-    //2번째 페이지 스크롤
+      //2번째 페이지 스크롤
       const p2 = gsap.timeline({
-          scrollTrigger: {
-            trigger: page2Ref.current,
-            start: "top top", 
-            end: "bottom 80",  
-            scrub: 1,
-            pin: true,
-            pinSpacing: false
-          }
-        });
-      //2번째 페이지 스크롤 시 화면 효과
-        p2.fromTo(
-          page2Ref.current,
-          { rotation:0 , scale: 1 },
-          {rotation: -15, scale: 0.85, ease: "power3.out"}
-        )
-      //3번재 페이지 등장
-        p2.fromTo(
-        page3Ref.current,
-        { y: "100%", scale: 0.4, rotation: 2 },
-        { y: "0%", scale: 1, rotation: 0, ease: "none"},
-          0
-      );
+        scrollTrigger: {
+          trigger: page2Ref.current,
+          start: "top top", 
+          end: "top 80",  
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
+          markers: true
+        }
+      });
+    //2번째 페이지 스크롤 시 화면 효과
+      p2.fromTo(
+        page2Ref.current,
+        { rotation:0 , scale: 1 },
+        {rotation: -15, scale: 0.85, ease: "power3.out"}
+      )
+    //3번재 페이지 등장
+      p2.fromTo(
+      page3Ref.current,
+      { y: "100%", scale: 0.4, rotation: 2 },
+      { y: "0%", scale: 1, rotation: 0, ease: "none"},
+        0
+    );
       return ()=>{
         p2.scrollTrigger?.kill();
       }
@@ -58,6 +60,7 @@ const App = () => {
       </section>
       <MainProject />
       <CloneProject />
+      <Practical />
     </div>
   );
 };

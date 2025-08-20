@@ -1,9 +1,13 @@
+.clone-project{
+  // height: 100vh;
 h2{
   font-size: 9rem;
   color: rgba(255, 255, 255, 0.8);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
-  margin: 4rem 10rem;
+  margin: 0 10rem;
+  margin-top: 20rem;
+  margin-bottom: 8rem;
   // text-align: left;
   // margin-top: 6rem;
   gap: 3rem;
@@ -22,7 +26,7 @@ h2{
 
 .clone-project {
   position: relative;
-  height: 150vh;
+  // height: 150vh;
   .line {
     position: absolute;
     top: 0;
@@ -119,4 +123,5 @@ h2{
       }
     }
   }
+}
 }

@@ -2,7 +2,7 @@
     {
       "id": 1,
       "className": "net",
-      "image": "./image/Clone/net-img.jpg",
+      "image": "/image/Clone/net-img.jpg",
       "title": "넷플릭스 클론 사이트",
       "description": [
         "국내 대표 OTT스트리밍 사이트의 UI를 클론하여 사용자가 최신 인기 영화를 확인하며, 클릭 시 상세 정보를 확인하는 웹사이트를 구현하였습니다.",
@@ -22,7 +22,7 @@
     {
       "id": 2,
       "className": "mom",
-      "image": "./image/Clone/mom-img.jpg",
+      "image": "/image/Clone/mom-img.jpg",
       "title": "모멘텀 클론 사이트",
       "description": [
         "Momentum 어플을 클론하여 사용자가 로그인 하고 매일의 명언, 날씨 정보를 확인하고, 간편하게 할일 목록을 작성할 수 있는 웹/앱을 구현하였습니다.",
@@ -41,7 +41,7 @@
     {
       "id": 3,
       "className": "air",
-      "image": "./image/Clone/air-img.jpg",
+      "image": "/image/Clone/air-img.jpg",
       "title": "에어비앤비 클론 사이트",
       "description": [
         "전 세계 숙소 예약 플랫폼인 Airbnb의 메인 페이지를 제작하여 사용자가 원하는 숙소 메뉴를 고르고, 숙소 이미지와 설명을 확인할 수 있는 웹사이트를 구현하였습니다.",

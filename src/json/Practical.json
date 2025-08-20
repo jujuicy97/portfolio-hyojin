@@ -1,0 +1,72 @@
+[
+    {
+      "id": 8,
+      "title": "AniProject",
+      "techStack": "Figma React JS",
+      "description": "GSAP활용 능력과 인터랙티브한 웹 표현 기술을 연습하기 위해 제작하였습니다.",
+      "image": "/image/Practical/ani.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Carousel",
+      "techStack": "Figma React JS",
+      "description": "GSAP과 JS를 사용해 이벤트 처리와 애니메이션 흐름을 익히기 위해 제작하였습니다.",
+      "image": "/image/Practical/carousel.jpg"
+    },
+    {
+      "id": 7,
+      "title": "BlueProject",
+      "techStack": "Figma React JS",
+      "description": "반응형 퍼블리싱 역량 강화 및 효율적인 코드 관리와 디바이스별 스크립트 분리를 연습하기 위해 제작하였습니다.",
+      "image": "/image/Practical/blue.jpg"
+    },
+    {
+      "id": 6,
+      "title": "BookStore",
+      "techStack": "Figma React JS",
+      "description": "CSS 애니메이션과 인터랙티브 UI 구현 능력 향상을 위해 제작하였습니다.",
+      "image": "/image/Practical/book.jpg"
+    },
+    {
+      "id": 4,
+      "title": "SITE",
+      "techStack": "Figma HTML CSS JS",
+      "description": "스크롤 위치에 따라 변화하는 애니메이션을 연습하고 인터랙티브한 UI 구현 연습을 위해 제작하였습니다.",
+      "image": "/image/Practical/site.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Pinterest",
+      "techStack": "Figma HTML CSS JS",
+      "description": "JS 기반 데이터 출력과, 필터링, 이벤트 처리 기능 연습을 위해 제작하였습니다.",
+      "image": "/image/Practical/pinterest.jpg"
+    },
+    {
+      "id": 2,
+      "title": "LOGGER",
+      "techStack": "Figma HTML CSS JS",
+      "description": "멀티페이지 구조 이해와 CSS재사용 연습을 위해 제작하였습니다.",
+      "image": "/image/Practical/logger.jpg"
+    },
+    {
+      "id": 1,
+      "title": "GRID",
+      "techStack": "Figma HTML CSS",
+      "description": "반응형 UI와 기본 JS 이벤트를 익히기 위해 제작하였습니다.",
+      "image": "/image/Practical/gird.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Massage Board",
+      "techStack": "HTML HTML CSS",
+      "description": "React와 Supabase 연동을 통해 로그인 기능을 연습하기 위해 제작하였습니다.",
+      "image": "/image/Practical/massage.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Tesla Clone",
+      "techStack": "HTML CSS",
+      "description": "HTML5 비디오 삽입, Flexbox를 활용한 레이아웃과 콘텐츠 배치를 연습하기 위해 제작하였습니다.",
+      "image": "/image/Practical/tesla.jpg"
+    }
+  ]
