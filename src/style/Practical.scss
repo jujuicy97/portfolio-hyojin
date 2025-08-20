@@ -1,5 +1,8 @@
 .practical {
   // height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
   .practical-title{
     font-size: 9rem;
     color: rgba(255, 255, 255, 0.8);
@@ -29,6 +32,7 @@
   .card-wrap{
     @include flex-layout();
     gap: 5rem;
+    // width: max-content;
     .card{
       padding: 5rem 7rem;
       .card-top{

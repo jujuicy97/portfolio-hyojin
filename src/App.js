@@ -22,11 +22,11 @@ const App = () => {
         scrollTrigger: {
           trigger: page2Ref.current,
           start: "top top", 
-          end: "top 80",  
+          end: "+=100%",  
           scrub: 1,
           pin: true,
-          pinSpacing: false,
-          markers: true
+          pinSpacing: true,
+          // markers: true
         }
       });
     //2번째 페이지 스크롤 시 화면 효과
@@ -38,8 +38,8 @@ const App = () => {
     //3번재 페이지 등장
       p2.fromTo(
       page3Ref.current,
-      { y: "100%", scale: 0.4, rotation: 2 },
-      { y: "0%", scale: 1, rotation: 0, ease: "none"},
+      { y: "100vh", scale: 0.4, rotation: 2 },
+      { y: "0vh", scale: 1, rotation: 0, ease: "none"},
         0
     );
       return ()=>{

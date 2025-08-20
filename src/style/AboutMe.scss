@@ -1,6 +1,8 @@
 .about-me {
+  width: 100%;
   background-color: var(--color-sub);
   color: var(--color-primary);
+  height: 100vh;
   @include flex-layout();
   .about-txt-wrap{
     width: 70%;
