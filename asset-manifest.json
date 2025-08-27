@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-hyojin/static/css/main.145bebd1.css",
-    "main.js": "/portfolio-hyojin/static/js/main.e20e3fee.js",
+    "main.css": "/portfolio-hyojin/static/css/main.8ddee3e1.css",
+    "main.js": "/portfolio-hyojin/static/js/main.49455791.js",
     "static/media/gallery1.jpg": "/portfolio-hyojin/static/media/gallery1.77deb0a06b213d49e307.jpg",
     "static/media/recycle1.png": "/portfolio-hyojin/static/media/recycle1.d792e65eedbad8991148.png",
     "static/media/skills-back.png": "/portfolio-hyojin/static/media/skills-back.da3e5ce5a7945e41a6ea.png",
@@ -9,11 +9,11 @@
     "static/media/quiz1.jpg": "/portfolio-hyojin/static/media/quiz1.05d520b3320e10420214.jpg",
     "static/media/endword1.jpg": "/portfolio-hyojin/static/media/endword1.bb131e341a1016cf4d07.jpg",
     "index.html": "/portfolio-hyojin/index.html",
-    "main.145bebd1.css.map": "/portfolio-hyojin/static/css/main.145bebd1.css.map",
-    "main.e20e3fee.js.map": "/portfolio-hyojin/static/js/main.e20e3fee.js.map"
+    "main.8ddee3e1.css.map": "/portfolio-hyojin/static/css/main.8ddee3e1.css.map",
+    "main.49455791.js.map": "/portfolio-hyojin/static/js/main.49455791.js.map"
   },
   "entrypoints": [
-    "static/css/main.145bebd1.css",
-    "static/js/main.e20e3fee.js"
+    "static/css/main.8ddee3e1.css",
+    "static/js/main.49455791.js"
   ]
 }
