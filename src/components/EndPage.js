@@ -27,7 +27,7 @@ useEffect(()=>{
         end: "bottom top",
         // pin: true,        
         toggleActions: "play reverse play reverse",
-        markers: true
+        // markers: true
       }
     }
   );
