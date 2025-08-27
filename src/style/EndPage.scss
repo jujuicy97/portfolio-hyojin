@@ -1,0 +1,49 @@
+.end-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+  }
+  .end-page > .end-wrap{
+    height: 95%;
+    width: 97%;
+    background-color: var(--color-sub);
+    color: var(--sub-color);
+    margin: 2rem;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .end-wrap > .end-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .end-wrap > .end-text > p{
+      font-size: 2.5rem;
+  }
+  .end-wrap > .end-text > h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 10rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+  }
+  .end-wrap > .end-text > .mail{
+    display: flex;
+    gap: 0.5rem;
+    
+  }
+  .end-wrap > .end-text > .mail > p{
+    font-size: 2rem;
+    // font-weight: bolder;
+    background-color: var(--color-primary);
+    color: #eeeeee;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+  }
+  .end-wrap > .end-text > .mail > p:hover{
+    filter: brightness(80%);
+  }

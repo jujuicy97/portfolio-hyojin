@@ -1,5 +1,5 @@
 .skills-wrap{
-  height: 100vh;  //원랜 105vh였음
+  height: 100vh;
   background-image: url(../../public/image//Skills/skills-back.png);
   @include flex-layout();
   img{
@@ -8,10 +8,6 @@
   }
   .skills{
     @include flex-layout();
-    // width: 70%;
-  .skills-top{
-  
-}
   }
 }
 

@@ -196,11 +196,12 @@ const StartPage = () => {
             <button className="btn1">My Project</button>
             <button className="btn2">About Me</button>
           </div>
-          <img
-            src="./image/steack.png"
-            ref={imgRef}
-            style={{ display: "none", opacity: 0 }}
-          />          
+          <div className="img-slider" ref={imgRef}>
+          <img src={process.env.PUBLIC_URL + "/image/steack.png"}/>          
+          <img src={process.env.PUBLIC_URL + "/image/steack.png"}/>     
+          <img src={process.env.PUBLIC_URL + "/image/steack.png"}/>     
+          <img src={process.env.PUBLIC_URL + "/image/steack.png"}/>     
+          </div>     
         </div>
 
 {/* 하단 메뉴버튼 */}        

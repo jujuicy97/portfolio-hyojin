@@ -8,6 +8,8 @@ import Skill from "./components/Skill";
 import MainProject from "./components/MainProject";
 import CloneProject from "./components/CloneProject";
 import Practical from "./components/Practical";
+import EndPage from "./components/EndPage";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,51 +18,56 @@ const App = () => {
   const page2Ref = useRef(null);
   const page3Ref = useRef(null);
 
-  useEffect(()=>{
-      //2번째 페이지 스크롤
-      const p2 = gsap.timeline({
+  useEffect(() => {
+    // page2
+    const st2 = gsap.to(page2Ref.current, {
+      rotation: -15,
+      scale: 0.85,
+      scrollTrigger: {
+        trigger: page2Ref.current,
+        start: "top top",
+        end: () => `+=${window.innerHeight}`,
+        scrub: 1,
+        pin: true,
+        pinSpacing: false,
+        onLeave: () => gsap.set(page2Ref.current, { display: "none" }),
+        // markers: true
+      },
+    });
+  
+    // page3
+    const st3 = gsap.fromTo(
+      page3Ref.current,
+      { y: "100%", scale: 0.4, rotation: 2 },
+      { y: "0%", scale: 1, rotation: 0, ease: "none",
         scrollTrigger: {
           trigger: page2Ref.current,
-          start: "top top", 
-          end: "+=100%",  
-          scrub: 1,
-          pin: true,
-          pinSpacing: true,
-          // markers: true
+          start: "top top",
+          end: () => `+=${window.innerHeight}`,
+          scrub: true,
         }
-      });
-    //2번째 페이지 스크롤 시 화면 효과
-      p2.fromTo(
-        page2Ref.current,
-        { rotation:0 , scale: 1 },
-        {rotation: -15, scale: 0.85, ease: "power3.out"}
-      )
-    //3번재 페이지 등장
-      p2.fromTo(
-      page3Ref.current,
-      { y: "100vh", scale: 0.4, rotation: 2 },
-      { y: "0vh", scale: 1, rotation: 0, ease: "none"},
-        0
-    );
-      return ()=>{
-        p2.scrollTrigger?.kill();
       }
-    },[]);
+    );
+  
+    return () => {
+      st2.scrollTrigger?.kill();
+      st3.scrollTrigger?.kill();
+    };
+  }, []);
 
   return (
     <div className="component-wrap">
-      <section>
         <StartPage/>
-      </section>
-      <section ref={page2Ref} >
+      <section  ref={page2Ref}>
         <AboutMe />
       </section>
-      <section ref={page3Ref} >
+      <section  ref={page3Ref}>
         <Skill />
       </section>
       <MainProject />
       <CloneProject />
       <Practical />
+      <EndPage />
     </div>
   );
 };
