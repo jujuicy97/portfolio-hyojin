@@ -44,15 +44,23 @@ const CloneProject = () => {
                     })}
                   </div>
                   <div className="txt-point">
-                    {card.points.map((point, i) =>
-                      point.link ? (
-                        <a key={i} href={point.link}>
+                    {card.points.map((point, i) => {
+                      // 정규식으로 URL 여부 판별
+                      const isLink = point.text.startsWith("http");
+
+                      return isLink ? (
+                        <a
+                          key={i}
+                          href={point.text}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {point.text}
                         </a>
                       ) : (
                         <p key={i}>{point.text}</p>
-                      )
-                    )}
+                      );
+                    })}
                   </div>
                 </div>
               </div>

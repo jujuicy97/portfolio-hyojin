@@ -16,7 +16,8 @@
       ],
       "points": [
         { "text": "100%(개인프로젝트)" },
-        { "text": "오픈API와 라이브러리 활용", "link": "https://jujuicy97.github.io/netflix/" }
+        { "text": "오픈API와 라이브러리 활용"}, 
+        { "text": "https://jujuicy97.github.io/netflix/" }
       ]
     },
     {
@@ -35,7 +36,7 @@
       ],
       "points": [
         { "text": "100%(개인프로젝트)" },
-        { "text": "오픈API와 라이브러리 활용", "link": "https://jujuicy97.github.io/netflix/" }
+        { "text": "https://jujuicy97.github.io/netflix/" }
       ]
     },
     {
@@ -55,7 +56,7 @@
       ],
       "points": [
         { "text": "100%(개인프로젝트)" },
-        { "text": "오픈API와 라이브러리 활용", "link": "https://jujuicy97.github.io/netflix/" }
+        { "text": "https://jujuicy97.github.io/netflix/" }
       ]
     }
   ]
