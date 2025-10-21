@@ -2,15 +2,15 @@
   width: 100%;
   background-color: var(--color-sub);
   color: var(--color-primary);
-  height: 100vh;
+  height: 105vh;
   @include flex-layout();
   .about-txt-wrap{
-    width: 70%;
+    width: 85%;
     height: 100vh;
     @include flex-layout(column);
     h1 {
       font-family: "Kaushan Script", cursive;
-      font-size: 20rem;
+      font-size: 19rem;
       width: 100%;
       text-align: right;
       filter: blur(4px);
@@ -20,9 +20,9 @@
       
     }
     .about-txt {
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-weight: 300;
-      margin: 4rem;
+      margin: 3rem;
       .point {
         font-size: 5rem;
         font-weight: 700;
@@ -31,18 +31,18 @@
     .about-btn {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.5rem;
       .row {
         display: flex;
-        gap: 2rem;
+        gap: 1.8rem;
         .borderBtn {
-          @include border-btn(250px, 70px);
+          @include border-btn(220px, 65px);
           font-size: 2.5rem;
           color: var(--color-primary);
           border: 3px solid var(--color-primary);
         }
         .colorBtn {
-          @include color-btn(250px, 70px);
+          @include color-btn(220px, 65px);
           font-size: 2.5rem;
           background-color: var(--color-primary);
           color: #eeeeee;      

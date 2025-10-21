@@ -1,16 +1,16 @@
 .main-project {
   // background-color: #222222;
   @include flex-layout(column);
-  height: 100vh;
-  overflow: hidden;
+  // height: 100vh;
+  // overflow-x: hidden;
   h1 {
     font-size: 9rem;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(4px);
     margin: 4rem;
-    margin-top: 6rem;
-      @include flex-layout();
+    margin-top: 15rem;
+    @include flex-layout();
     .txt1 {
       font-weight: 300;
     }
@@ -21,92 +21,76 @@
     }
   }
 
-//프로젝트 카드 전체  
+  //프로젝트 카드 전체
   .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
-    height: 100%;
+    // width: 0%;
+    // height: 110%;
     justify-items: center;
-    gap: 7rem 0;
+    align-items: end;
+    // gap: 7rem 0;
     overflow-y: auto;
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
+    gap: 5rem;
+    overflow: hidden;
+    padding: 4rem;
 
-// 각각 프로젝트 카드
+    // 각각 프로젝트 카드
     .project-card {
       position: relative;
-      width: 530px;
-      height: 646px;
-      > div {
-        position: absolute;
-        width: 530px;
-        height: 73%;
-        bottom: 0;
-        left: 0;
-        overflow-y: auto;
-        > img {
-          position: absolute;
+      width: 500px;
+      height: 590px;
+      display: flex;
+      // flex-direction: column;
+      align-items: center;
+      // gap: 1rem 0;
+      cursor: pointer;
+
+      .list-info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          position: relative;
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
           top: 0;
           left: 0;
+          border-radius: 7px;
+          transition: filter 0.2s ease;
+        }
+        &:hover img {
+          filter: brightness(0.75);
         }
       }
-
-//인덱스      
-      .index-wrap{
+      .btn-wrapper {
         position: absolute;
-        top: 0;
-        right: -25px;
-        @include flex-layout(column);
-        // display: inline-block;
-        gap: 1rem;
-        > li{
-          width: 25px;
-          height: 65px;
+        top: 30%;
+        right: 25px;
+        transform: translateY(-50%);
+        display: flex;
+        gap: 0.3rem;
+
+        .btn {
+          width: 50px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 3px;
           background-color: var(--color-sub);
           color: var(--color-primary);
-          @include flex-layout();
-          font-size: 1.3rem;
-          font-weight: 500;
-          span {
-            writing-mode: vertical-rl;
-            text-orientation: upright;
-        }
+          font-weight: 400;
+          transition: 0.3s ease;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+          }
         }
       }
     }
-
-
-//각각 프로젝트 카드의 백그라운드 이미지    
   }
-  .projects > .project-card:nth-child(1) {
-    background-image: url("../../public/image/MainProject/dream1.png");
-  }
-  .projects > .project-card:nth-child(2) {
-    background-image: url("../../public/image/MainProject/recycle1.png");
-  }
-  .projects > .project-card:nth-child(3) {
-    background-image: url("../../public/image/MainProject/endword1.jpg");
-    > div {
-      overflow-y: hidden;
-    }
-  }
-  .projects > .project-card:nth-child(4) {
-    background-image: url("../../public/image/MainProject/quiz1.jpg");
-    > div {
-      overflow-y: hidden;
-    }
-  }
-  .projects > .project-card:nth-child(5) {
-    background-image: url("../../public/image/MainProject/gallery1.jpg");
-    > div {
-      overflow-y: hidden;
-    }
-  }
-
-
-
-
-
 }

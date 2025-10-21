@@ -1,0 +1,120 @@
+[
+
+    {
+        "name": "ggfesta",
+        "image": [
+          "/image/MainProject/dreamThumb.svg"
+        ],
+        "slide": [
+          {
+            "type": "text",
+            "title": "회고",
+            "src":"/image/MainProject/dreamDesign.svg"
+          },
+          {
+            "type": "image",
+            "title": "회고",
+            "src":"/image/MainProject/dreamDesign.svg"
+          }
+        ],
+        "interactive": true,
+        "github": "https://github.com/jujuicy97/MainProject", 
+        "site": "https://jujuicy97.github.io/dreamland"
+      },
+
+
+    {
+      "name": "dreamland",
+      "image": [
+        "/image/MainProject/dreamThumb.svg"
+      ],
+      "slide": [
+        {
+            "type": "image",
+            "title": "회고",
+            "src":"/image/MainProject/dreamRem.svg"
+          },
+        {
+            "type": "image",
+            "title": "유저플로우",
+            "src": "/image/MainProject/dreamUser.svg"
+          },
+        {
+            "type": "image",
+            "title": "디자인시스템",
+            "src": "/image/MainProject/dreamDesign.svg"
+          },
+        {
+            "type": "image",
+            "title": "반응형디자인",
+            "src": "/image/MainProject/dreamDesign2.svg"
+        }
+      ],
+      "interactive": true,
+      "github": "https://github.com/jujuicy97/MainProject", 
+      "site": "https://jujuicy97.github.io/dreamland"
+    },
+
+
+    {
+      "name": "recycle",
+      "image": [
+        "/image/MainProject/recycleThumb.svg"
+      ],
+      "slide": [
+        {
+          "type": "image",
+          "title": "회고",
+          "src":"/image/MainProject/recycleRem.svg"
+        },
+        {
+          "type": "image",
+          "title": "디자인시스템",
+          "src":"/image/MainProject/recycleDesign.svg"
+        },
+        {
+          "type": "image",
+          "title": "반응형디자인",
+          "src":"/image/MainProject/recycleDesign2.svg"
+        }
+      ],
+      "interactive": true,
+      "github": "https://github.com/jujuicy97/MainProject", 
+      "site": "https://jujuicy97.github.io/dreamland"
+    },
+
+
+    {
+      "name": "endword",
+      "image": [
+        "/image/MainProject/Endword.svg"
+      ],
+      "interactive": true,
+      "github": "https://github.com/jujuicy97/MainProject", 
+      "site": "https://jujuicy97.github.io/dreamland"
+    },
+
+
+    {
+      "name": "quiz",
+      "image": [
+        "/image/MainProject/quiz.svg"
+      ],
+      "interactive": true,
+      "github": "https://github.com/jujuicy97/MainProject", 
+      "site": "https://jujuicy97.github.io/dreamland"
+    },
+
+
+    {
+      "name": "gallery",
+      "image": [
+        "/image/MainProject/Gallery.svg"
+      ],
+      "interactive": true,
+      "github": "https://github.com/jujuicy97/MainProject", 
+      "site": "https://jujuicy97.github.io/dreamland"
+    }
+
+
+  ]

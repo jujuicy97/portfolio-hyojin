@@ -23,14 +23,15 @@ useEffect(()=>{
       ease: "power2.out",
       scrollTrigger: {
         trigger: endRef.current,
-        start: "top top", 
-        end: "bottom top",
+        start: "top 50%", 
+        end: "bottom 10%",
         // pin: true,        
         toggleActions: "play reverse play reverse",
         // markers: true
       }
     }
   );
+  console.log(endRef.current);
 }, []);
 
   return (
@@ -52,7 +53,8 @@ useEffect(()=>{
             </p>
             <p>
               <a
-                href="https://github.com/jujuicy97/jujuicy97.github.io"
+                href="https://github.com/jujuicy97"
+                // href="https://github.com/jujuicy97/jujuicy97.github.io"
                 target="_blank"
               >
                 → GitHub

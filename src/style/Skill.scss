@@ -1,13 +1,16 @@
 .skills-wrap{
-  height: 100vh;
+  height: 120vh;
+  // background-color: #eee;
   background-image: url(../../public/image//Skills/skills-back.png);
   @include flex-layout();
-  img{
-    display: block;
-    
-  }
   .skills{
     @include flex-layout();
+  }
+  img{
+    display: block;
+    max-width: 100%;   
+    height: auto;      
+    width: 350px;      
   }
 }
 

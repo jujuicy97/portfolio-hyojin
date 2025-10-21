@@ -6,13 +6,15 @@
   margin-top: 0;
   z-index: 1;
   display: flex;
+  margin-top: 15rem;
 
   .practical-title {
     // position: sticky;
     // top: 5rem;
     // left: 50%;
     // transform: translateX(-50%);
-    margin: 10rem 5rem;
+    // margin: 10rem 5rem;
+    
     font-size: 8rem;
     color: rgba(255, 255, 255, 0.85);
     display: flex;
@@ -38,6 +40,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 5rem;
     .card-wrap {
       @include flex-layout();
       gap: 30px;
