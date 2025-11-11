@@ -1,4 +1,20 @@
 [
+  {
+    "id": 11,
+    "title": "endword",
+    "techStack": "React openAPI Figma",
+    "description": "오픈API와 로컬 상태관리를 활용하여 외부 데이터베이스 없이도 가볍고 안정적인 끝말잇기 게임을 구현해보기 위해 제작하였습니다.",
+    "image": "/image/Practical/Endword.svg"
+  },
+
+  {
+    "id": 12,
+    "title": "Quiz",
+    "techStack": "React",
+    "description": "컴포넌트 간 props 전달과 실시간 점수 계산 로직 등의 상태 관리를 연습하기 위해 제작하였습니다.",
+    "image": "/image/Practical/quiz.svg"
+  },
+
     {
       "id": 8,
       "title": "AniProject",

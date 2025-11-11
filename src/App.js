@@ -8,6 +8,7 @@ import CloneProject from "./components/CloneProject";
 import Practical from "./components/Practical";
 import EndPage from "./components/EndPage";
 import GsapScroll from "./components/StartPage/GsapScroll";
+import ScrollContext from "./components/StartPage/ScrollContext"
 
 const App = () => {
   //GsapScroll 효과
@@ -17,11 +18,11 @@ const App = () => {
 
   //메뉴버튼 섹션 이동 함수(startPage에 넘겨주기)
   const aboutRef = useRef();
-  const toolsRef = useRef();
   const projectRef = useRef();
+  const contactRef = useRef();
 
   const handleMenuScroll = (i) => {
-    const ref = [aboutRef, toolsRef, projectRef];
+    const ref = [aboutRef, projectRef, contactRef];
     ref[i].current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -32,11 +33,21 @@ const App = () => {
   };
   const setRef2 = (el2)=>{
     page3Ref.current = el2; //gsap용
-    toolsRef.current = el2; //메뉴 이동용
+    projectRef.current = el2; //메뉴 이동용
   }
 
   return (
-    <>
+    //provider로 감싸서 context에 ref와 함수를 넣음 = 하위 컴포넌트들이 context를 통해 접근 가능
+    <ScrollContext.Provider
+      value={{
+        page2Ref,
+        page3Ref,
+        aboutRef,
+        projectRef,
+        contactRef,
+        handleMenuScroll,
+      }}
+    >
       <div className="component-wrap">
         <StartPage onMenuClick={handleMenuScroll} />
         <section ref={setRef1}>
@@ -50,10 +61,12 @@ const App = () => {
         </section>
         <CloneProject />
         <Practical />
+        <section ref={contactRef}>
         <EndPage />
+        </section>
       </div>
-      <GsapScroll page2Ref={page2Ref} page3Ref={page3Ref} />
-    </>
+      <GsapScroll />
+    </ScrollContext.Provider>
   );
 };
 

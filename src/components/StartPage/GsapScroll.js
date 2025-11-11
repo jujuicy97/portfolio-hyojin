@@ -1,12 +1,16 @@
 //startPage의 스크롤 효과 컴포넌트
 
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollContext from "./ScrollContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const GsapScroll = ({page2Ref, page3Ref}) => {
+const GsapScroll = () => {
+  //원래 ref는 하나의 dom만 저장, 페이지가 2개여서 2개를 담을 변수dom 배열을 생성
+  //useContext를 활용하여 gsapscroll로 바로 넘겨줌(app.js를 거칠 필요가 없음)
+  const {page2Ref, page3Ref} = useContext(ScrollContext);
 
   useEffect(() => {
     if (!page2Ref.current || !page3Ref.current) return;

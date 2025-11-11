@@ -161,15 +161,15 @@ const StartPage = ({onMenuClick}) => {
   
   //메뉴바 아이템들을 클릭 시 해당 공간으로 이동
   const aboutRef = useRef(null);
-  const toolsRef = useRef(null);
   const projectRef = useRef(null);
+  const contactRef = useRef(null);
 
-  const menuRef = [aboutRef, toolsRef, projectRef];
+  const menuRef = [aboutRef, projectRef, contactRef];
 
    const menuItem = [ 
-    { name: "ABOUT ME", ref: aboutRef },
-    { name: "TOOLS", ref: toolsRef },
-    { name: "PROJECT", ref: projectRef },
+    { name: "ABOUT" },
+    { name: "PROJECT" },
+    { name: "CONTACT" },
   ];
 
 
@@ -208,8 +208,8 @@ const StartPage = ({onMenuClick}) => {
             ref={btnRef}
             style={{ display: "none", opacity: 0 }}
           >
-            <button className="btn1" >My Project</button>
-            <button className="btn2">About Me</button>
+            <button className="btn1" >Start my story</button>
+            <button className="btn2">Next Chapter</button>
           </div>
           <div className="img-slider" ref={imgRef}>
           <img src={process.env.PUBLIC_URL + "/image/steack.png"}/>          

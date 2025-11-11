@@ -3,18 +3,28 @@
     {
         "name": "ggfesta",
         "image": [
-          "/image/MainProject/dreamThumb.svg"
+          "/image/MainProject/ggfestaThumb.svg"
         ],
         "slide": [
           {
-            "type": "text",
+            "type": "image",
             "title": "회고",
-            "src":"/image/MainProject/dreamDesign.svg"
+            "src":"/image/MainProject/ggfesta2.svg"
           },
           {
             "type": "image",
-            "title": "회고",
-            "src":"/image/MainProject/dreamDesign.svg"
+            "title": "유저플로우",
+            "src":"/image/MainProject/ggfesta3.svg"
+          },
+          {
+            "type": "image",
+            "title": "디자인시스템",
+            "src":"/image/MainProject/ggfesta4.svg"
+          },
+          {
+            "type": "image",
+            "title": "반응형디자인",
+            "src":"/image/MainProject/ggfesta5.svg"
           }
         ],
         "interactive": true,
@@ -82,34 +92,11 @@
       "github": "https://github.com/jujuicy97/MainProject", 
       "site": "https://jujuicy97.github.io/dreamland"
     },
-
-
-    {
-      "name": "endword",
-      "image": [
-        "/image/MainProject/Endword.svg"
-      ],
-      "interactive": true,
-      "github": "https://github.com/jujuicy97/MainProject", 
-      "site": "https://jujuicy97.github.io/dreamland"
-    },
-
-
+    
     {
       "name": "quiz",
       "image": [
         "/image/MainProject/quiz.svg"
-      ],
-      "interactive": true,
-      "github": "https://github.com/jujuicy97/MainProject", 
-      "site": "https://jujuicy97.github.io/dreamland"
-    },
-
-
-    {
-      "name": "gallery",
-      "image": [
-        "/image/MainProject/Gallery.svg"
       ],
       "interactive": true,
       "github": "https://github.com/jujuicy97/MainProject", 

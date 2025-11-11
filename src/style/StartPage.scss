@@ -69,19 +69,7 @@
       margin-top: -1.5rem;
     }
   }
-  .btn-wrap {
-    @include flex-layout();
-    gap: 3rem;
-    margin-top: 4rem;
-    .btn1 {
-      @include color-btn;
-      color: #0A0F2C;
-    }
-    .btn2 {
-      @include border-btn;
-      border: 2px solid #B9E901;
-    }
-  }
+  
   .img-slider{
     position: absolute;
     top: 75%;   
@@ -94,6 +82,21 @@
     margin: 0 3rem;
   }
 }
+
+.btn-wrap {
+  @include flex-layout();
+  gap: 4rem;
+  margin-top: 4rem;
+
+  .btn1 {
+    @include color-btn;
+    color: #0A0F2C;
+  }
+  .btn2 {
+    @include border-btn;
+    border: 2px solid #B9E901;  }
+}
+
   .menu-wrap{
     @include flex-layout(row);
       margin-bottom: 7rem;
