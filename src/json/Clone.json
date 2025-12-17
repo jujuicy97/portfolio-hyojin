@@ -51,8 +51,7 @@
       "bottom": [
         { "title": "제작에 사용된 스킬", "content": "HTML5, CSS3" },
         { "title": "UI 디자인 방식", "content": "Figma를 활용한 디자인 시스템 구축 후 코드 구현" },
-        { "title": "레이아웃 제작 방식", "content": "Flex와 Grid를 활용한 반응형 레이아웃 구현" },
-        { "title": "플러그인", "content": "React, React-router, React-icons, React-slick, TMDB API, SCSS" }
+        { "title": "레이아웃 제작 방식", "content": "Flex와 Grid를 활용한 반응형 레이아웃 구현" }
       ],
       "points": [
         { "text": "100%(개인프로젝트)" },
