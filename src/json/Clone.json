@@ -32,7 +32,8 @@
       "bottom": [
         { "title": "제작에 사용된 스킬", "content": "React, React-Router, SCSS" },
         { "title": "UI 디자인 방식", "content": "Figma를 활용한 디자인 시스템 구축 후 코드 구현" },
-        { "title": "레이아웃 제작 방식", "content": "Flex 기반의 레이아웃 제작" }
+        { "title": "레이아웃 제작 방식", "content": "Flex 기반의 레이아웃 제작" },
+        { "title": "플러그인", "content": "React, React-router, React-icons, SCSS" }
       ],
       "points": [
         { "text": "100%(개인프로젝트)" },
