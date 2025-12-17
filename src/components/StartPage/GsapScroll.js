@@ -16,7 +16,7 @@ const GsapScroll = () => {
     if (!page2Ref.current || !page3Ref.current) return;
     // page2
     const st2 = gsap.to(page2Ref.current, {
-      rotation: -15,
+      rotation: -10,
       scale: 0.85,
       scrollTrigger: {
         trigger: page2Ref.current,

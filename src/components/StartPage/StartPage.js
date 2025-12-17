@@ -200,7 +200,7 @@ const StartPage = ({onMenuClick}) => {
               ref={fourRef}
               style={{ display: "none", opacity: 0 }}
             >
-              - Front-End Developer
+              Front-End Developer & Web Publisher
             </p>
           </div>
           <div
